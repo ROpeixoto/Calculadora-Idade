@@ -70,7 +70,7 @@ input:focus{
 }
 
  button {
-  background-image: url('./src/assets/images/icon-arrow.svg');
+  background-image: url('./src/images/icon-arrow.svg');
   background-color:rgb(134, 76, 255);
   background-size: 30px;
   background-repeat: no-repeat;
