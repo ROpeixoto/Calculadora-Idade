@@ -17,6 +17,7 @@ const AgeCalculator = () => {
       return;
     }
 
+
     let years = today.getFullYear() - birthDateObj.getFullYear();
     let months = today.getMonth() - birthDateObj.getMonth();
     let days = today.getDate() - birthDateObj.getDate();
@@ -39,7 +40,7 @@ const AgeCalculator = () => {
     <div class="interface">
       <div class="inserir">
         <div class="data" id="dia">
-          <label htmlFor="day">Dia</label>
+          <label for="day">DAY</label>
           <input
             id="day"
             type="number"
@@ -53,7 +54,7 @@ const AgeCalculator = () => {
 
         {/* Campo Mês */}
         <div class="data">
-          <label htmlFor="month">Mês</label>
+          <label for="month" id="label-month">MONTH</label>
           <input
             id="month"
             type="number"
@@ -67,7 +68,7 @@ const AgeCalculator = () => {
 
         {/* Campo Ano */}
         <div class="data">
-          <label htmlFor="year">Ano</label>
+          <label for="year"  id="label-year">YEAR</label>
           <input
             id="year"
             type="number"
@@ -78,7 +79,7 @@ const AgeCalculator = () => {
             onChange={(e) => setYear(e.target.value)}
           />
         </div>
-        <button onClick={calculateAge}>Calcular Idade</button>
+        <button onClick={calculateAge}></button>
       </div>
 
 
