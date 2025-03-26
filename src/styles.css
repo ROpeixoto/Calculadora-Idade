@@ -1,25 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-@font-face {
-  font-family: 'italico';
-  src: url('fonts/Poppins-ExtraBoldItalic.ttf');
-}
-
-@font-face {
-  font-family: 'Fonte2';
-  src: url('fonts/Poppins-BoldItalic.ttf');
-}
-
-@font-face {
-  font-family: 'input';
-  src: url('fonts/Poppins-Bold.ttf');
-}
-
-@font-face {
-  font-family: 'Label';
-  src: url('fonts/Poppins-Regular.ttf');
-}
-
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -78,7 +56,8 @@ input {
   margin: 10px;
   margin-bottom: 15px;
   margin-top: 0px;
-  font-family: 'input' ;
+  font-family: 'Poppins';
+  font-weight: 700;
 }
 
 input:hover {
@@ -109,7 +88,7 @@ input:focus{
   justify-content: center;
   font-size: 10px; /* Ajusta o tamanho da fonte */
   margin-left: 330px;
-  margin-top:61px;
+  margin-top:50px;
 }
 
 button:hover {
@@ -134,12 +113,15 @@ margin: 0px;
   line-height: 0;
   margin: 0px;
   font-size: 80px;
-  font-family: 'Fonte2';
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-style: italic;
   color: rgb(134, 76, 255);
 }
 
 label{
-  font-family: 'Label';
+  font-family: 'Poppins';
+  font-weight: 400;
   text-align: initial;
   font-size: small;
 }
@@ -154,11 +136,11 @@ label{
 
 
 .textos{
-  line-height: 1.3;
+  line-height: 1.4;
   margin:0px;
   font-size: 60px;
   font-family: 'Poppins';
-  font-weight:700 ;
+  font-weight:800 ;
   font-style:italic ;
   color: black;
 }
