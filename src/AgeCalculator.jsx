@@ -5,7 +5,7 @@ const AgeCalculator = () => {
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
-  const [age, setAge] = useState({ years: 0, months: 0, days: 0 });
+  const [age, setAge] = useState({ years: "--", months: "--", days: "--"});
 
   const calculateAge = () => {
     const today = new Date();

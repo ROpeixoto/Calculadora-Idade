@@ -70,7 +70,7 @@ input:focus{
 }
 
  button {
-  background-image: url('./src/images/icon-arrow.svg');
+  background-image: url('public/icon-arrow.svg');
   background-color:rgb(134, 76, 255);
   background-size: 30px;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ input:focus{
   justify-content: center;
   font-size: 10px; /* Ajusta o tamanho da fonte */
   margin-left: 330px;
-  margin-top:51px;
+  margin-top:50px;
 }
 
 button:hover {
