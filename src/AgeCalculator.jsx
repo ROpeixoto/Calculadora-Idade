@@ -13,10 +13,38 @@ const AgeCalculator = () => {
 
     // Verifica se todos os campos estão preenchidos
     if (!day || !month || !year) {
-      alert("Por favor, preencha todos os campos");
+      alert("Please, fill all the fields");
       return;
     }
 
+    if(day > 31 || day < 1){
+      alert("Enter a valid day");
+      return;
+    }
+
+    if(month < 1 || month > 12){
+      alert("Enter a valid month");
+      return;
+    }
+
+    
+    if((year % 4 == 0 && year % 100 !== 0) || (year % 400 == 0)){
+      if (month == 2 && day > 29){
+        alert("Enter a valid day (Leap Year))");
+        return;
+      }
+    } else{
+       if (month == 2 && day > 28){
+        alert("Enter a valid day");
+        return;
+      }
+    }
+  
+
+    if(year > today.getFullYear()){
+      alert("You were not even born yet")
+      return
+    }
 
     let years = today.getFullYear() - birthDateObj.getFullYear();
     let months = today.getMonth() - birthDateObj.getMonth();
