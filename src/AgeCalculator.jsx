@@ -10,7 +10,7 @@ const AgeCalculator = () => {
 
   const calculateAge = () => {
     const today = new Date();
-    const birthDateObj = new Date(year, month - 1, day);
+    const birthDate = new Date(year, month - 1, day);
     new Date(today.getFullYear, today.getMonth, today.getDate);
 
     // verifica se todos os campos estão preenchidos
@@ -50,14 +50,14 @@ const AgeCalculator = () => {
     }
 
     //caso o usuaria insira uma data maior do que a de hoje
-    if (today < birthDateObj) {
+    if (today < birthDate) {
       alert("You were not even born yet");
       return;
     }
 
-    let years = today.getFullYear() - birthDateObj.getFullYear();
-    let months = today.getMonth() - birthDateObj.getMonth();
-    let days = today.getDate() - birthDateObj.getDate();
+    let years = today.getFullYear() - birthDate.getFullYear();
+    let months = today.getMonth() - birthDate.getMonth();
+    let days = today.getDate() - birthDate.getDate();
 
     //se o dia do mês atual for menor que o dia do mês do aniversariante, days será negativo
     //então iremos pegar o ultimo dia do mês anterior e somar com a diferença entre
