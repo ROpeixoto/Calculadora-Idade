@@ -10,7 +10,7 @@ body {
   background-color: #f0f0f0;
 }
 
-.interface {
+.App {
   text-align: center;
   background-color: rgb(255, 255, 255);
   width: 430px;
@@ -54,7 +54,7 @@ body {
   padding: 8px;
 }
 
-input {
+input.insert-data {
   margin: 10px;
   margin-bottom: 15px;
   margin-top: 0px;
@@ -64,6 +64,7 @@ input {
 
 input:hover {
   box-shadow: 2px 1px 1px gray;
+  background-color: whitesmoke;
 }
 
 input:focus{
@@ -71,7 +72,7 @@ input:focus{
   outline: 0;
 }
 
- button {
+ button.purple {
   background-image: url('./assets/icon-arrow.svg');
   background-color:rgb(134, 76, 255);
   background-size: 30px;
@@ -85,16 +86,13 @@ input:focus{
   border: none;
   border-radius: 50%; /* Torna o botão redondo */
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 10px; /* Ajusta o tamanho da fonte */
   margin-left: 330px;
   margin-top:50px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: rgb(110, 60, 230);
 }
 
 .displayanos{
@@ -147,3 +145,33 @@ label{
   color: black;
 }
 
+@media  (max-width: 1280px){
+  .App{
+    width:350px;
+    height: 330px;
+
+  }
+
+  .datas{
+    font-size:60px;
+  }
+
+  .textos{
+      font-size: 40px;
+  }
+
+  input.insert-data{
+    margin-bottom: 40px;
+  }
+  button.purple{
+    width: 50px;
+    height: 50px;
+    margin-top:75px;
+    margin-left:130px;
+    background-position: 10px center;
+  }
+  .inserir{
+    width: 295px;
+  }
+
+}

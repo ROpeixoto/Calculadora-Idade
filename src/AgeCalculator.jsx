@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import AgeDisplay from "./AgeDisplay";
+import ButtonCalculate from "./ButtonCalculate"
+
 
 const AgeCalculator = () => {
   const [day, setDay] = useState("");
@@ -75,11 +77,12 @@ const AgeCalculator = () => {
   };
 
   return (
-    <div class="interface">
-      <div class="inserir">
-        <div class="data" id="dia">
+    <div className="interface">
+      <div className="inserir">
+        <div className="data" id="dia">
           <label for="day">DAY</label>
           <input
+                      className="insert-data"
             id="day"
             type="number"
             min="1"
@@ -90,10 +93,11 @@ const AgeCalculator = () => {
           />
         </div>
 
-        {/* Campo Mês */}
-        <div class="data">
+
+        <div className="data">
           <label for="month" id="label-month">MONTH</label>
           <input
+                      className="insert-data"
             id="month"
             type="number"
             min="1"
@@ -104,22 +108,22 @@ const AgeCalculator = () => {
           />
         </div>
 
-        {/* Campo Ano */}
-        <div class="data">
+
+        <div className="data">
           <label for="year"  id="label-year">YEAR</label>
           <input
+            className="insert-data"
             id="year"
             type="number"
-            min="1900"
+            min="100"
             max={new Date().getFullYear()}
-            placeholder="AAAA"
+            placeholder="YYYY"
             value={year}
             onChange={(e) => setYear(e.target.value)}
           />
         </div>
-        <button onClick={calculateAge}></button>
+        <ButtonCalculate calculateAge = {calculateAge}/>
       </div>
-
 
       <AgeDisplay age={age} />
     </div>
