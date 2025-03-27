@@ -11,7 +11,6 @@ const AgeCalculator = () => {
   const calculateAge = () => {
     const today = new Date();
     const birthDate = new Date(year, month - 1, day);
-    new Date(today.getFullYear, today.getMonth, today.getDate);
 
     // verifica se todos os campos estão preenchidos
     if (!day || !month || !year) {
