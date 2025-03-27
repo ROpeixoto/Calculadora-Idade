@@ -10,24 +10,30 @@ const AgeCalculator = () => {
   const calculateAge = () => {
     const today = new Date();
     const birthDateObj = new Date(year, month - 1, day);
+    new Date(today.getFullYear,today.getMonth,today.getDate)
 
-    // Verifica se todos os campos estão preenchidos
+    // verifica se todos os campos estão preenchidos
     if (!day || !month || !year) {
       alert("Please, fill all the fields");
       return;
     }
 
-    if(day > 31 || day < 1){
+    if ((month == 4 || month == 6 || month == 9 || month == 11) && (day > 30 || day < 1)) {
       alert("Enter a valid day");
       return;
     }
-
+  //verificando dias e meses
+    else if(day > 31 || day < 1){
+      alert("Enter a valid day");
+      return;
+    }
     if(month < 1 || month > 12){
       alert("Enter a valid month");
       return;
     }
 
     
+    //verificando anos bissextos
     if((year % 4 == 0 && year % 100 !== 0) || (year % 400 == 0)){
       if (month == 2 && day > 29){
         alert("Enter a valid day (Leap Year))");
@@ -40,8 +46,8 @@ const AgeCalculator = () => {
       }
     }
   
-
-    if(year > today.getFullYear()){
+    //caso o usuaria insira uma data maior do que a de hoje
+    if(today < birthDateObj){
       alert("You were not even born yet")
       return
     }
@@ -50,10 +56,14 @@ const AgeCalculator = () => {
     let months = today.getMonth() - birthDateObj.getMonth();
     let days = today.getDate() - birthDateObj.getDate();
 
+
+    //se o dia do mês atual for menor que o dia do mês do aniversariante, days será negativo
+    //então iremos pegar o ultimo dia do mês anterior e somar com a diferença entre
+    //o dia do mes atual e do aniversario
     if (days < 0) {
       months--;
       days =
-        days + new Date(today.getFullYear(), today.getMonth(), 0).getDate();
+        days + new Date(today.getFullYear(), today.getMonth(), 0).getDate(); 
     }
 
     if (months < 0) {
