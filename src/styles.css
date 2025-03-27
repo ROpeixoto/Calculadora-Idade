@@ -1,5 +1,3 @@
-
-
 body {
   font-family: Arial, sans-serif;
   display: flex;
@@ -58,7 +56,7 @@ input.insert-data {
   margin: 10px;
   margin-bottom: 15px;
   margin-top: 0px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
 }
 
@@ -67,20 +65,20 @@ input:hover {
   background-color: whitesmoke;
 }
 
-input:focus{
+input:focus {
   background-color: whitesmoke;
   outline: 0;
 }
 
- button.purple {
-  background-image: url('./assets/icon-arrow.svg');
-  background-color:rgb(134, 76, 255);
+button.purple {
+  background-image: url("./assets/icon-arrow.svg");
+  background-color: rgb(134, 76, 255);
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 15px center;
 
   position: fixed;
-  width: 60px;  /* Define a largura */
+  width: 60px; /* Define a largura */
   height: 60px; /* Define a altura igual à largura */
   color: rgb(255, 255, 255);
   border: none;
@@ -88,90 +86,86 @@ input:focus{
   cursor: pointer;
   font-size: 10px; /* Ajusta o tamanho da fonte */
   margin-left: 330px;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
 button:hover {
   background-color: rgb(110, 60, 230);
 }
 
-.displayanos{
-  display:inline;
-
+.displayanos {
+  display: inline;
 }
 
-.visor{
+.visor {
   margin-top: 20px;
   text-align: initial;
 }
 
-.visor p{
-margin: 0px;
+.visor p {
+  margin: 0px;
 }
 
-.datas{
+.datas {
   line-height: 0;
   margin: 0px;
   font-size: 80px;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
   font-style: italic;
   color: rgb(134, 76, 255);
 }
 
-label{
-  font-family: 'Poppins';
+label {
+  font-family: "Poppins";
   font-weight: 400;
   text-align: initial;
   font-size: small;
 }
 
-#label-month{
+#label-month {
   padding-left: 10px;
 }
 
-#label-year{
+#label-year {
   padding-left: 10px;
 }
 
-
-.textos{
+.textos {
   line-height: 1.4;
-  margin:0px;
+  margin: 0px;
   font-size: 60px;
-  font-family: 'Poppins';
-  font-weight:800 ;
-  font-style:italic;
+  font-family: "Poppins";
+  font-weight: 800;
+  font-style: italic;
   color: black;
 }
 
-@media (max-width: 1280px){
-  .App{
-    width:350px;
+@media (max-width: 1280px) {
+  .App {
+    width: 350px;
     height: 330px;
-
   }
 
-  .datas{
-    font-size:60px;
+  .datas {
+    font-size: 60px;
   }
 
-  .textos{
-      font-size: 40px;
+  .textos {
+    font-size: 40px;
   }
 
-  input.insert-data{
+  input.insert-data {
     margin-bottom: 40px;
   }
-  button.purple{
+  button.purple {
     width: 50px;
     height: 50px;
-    margin-top:75px;
-    margin-left:130px;
+    margin-top: 75px;
+    margin-left: 130px;
     background-position: 10px center;
   }
-  .inserir{
+  .inserir {
     width: 295px;
   }
-
 }

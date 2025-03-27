@@ -1,6 +1,6 @@
-import React from 'react';
-import AgeCalculator from './AgeCalculator';
-import './styles.css';
+import React from "react";
+import AgeCalculator from "./AgeCalculator";
+import "./styles.css";
 
 function App() {
   return (
